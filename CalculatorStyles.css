@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+.WholeCalculator {
+    width: 400px;
+    background-color: black;
+    color: white;
+    height: fit-content;
+    border: black solid 2px;
+    margin: 10px;
+}
+
+/* ROWS */
+
+.screen {
+    color: white;
+    background-color: black;
+    font-family: monospace;
+    padding-right: 10px;
+    font-size: 35px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.Row {
+    display: flex;
+    align-content: stretch; /*to have the same height*/
+    justify-content: space-between;
+    /*margin-bottom: 0.5%;*/
+}
+
+/* BUTTONS */
+
+.Button {
+    /* padding: 3px;*/
+    border: none;
+    background-color: white;
+    color: black;
+    width: 24.5%;
+    height: 100px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    cursor: pointer;
+    margin: 0.5%;
+}
+ .Button:hover {
+     background-color: #ebebeb;
+ }
+
+ .Button:active {
+    background-color: #bbbcbe;
+}
+
+.Button:last-child {
+    background-color: #df974c;
+    color: white;
+}
+
+.Button:last-child:hover {
+    background-color: #dfb07e;
+}
+
+.Button:last-child:active {
+    background-color: #dd8d37;
+}
+
+.Double {
+    /*  inherits from .Button*/
+    width: 49.7%;
+}
+
+.Triple {
+    /*  inherits from .Button*/
+    width: 74.8%;
+}
